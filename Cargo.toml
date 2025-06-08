@@ -1,0 +1,15 @@
+[package]
+name = "rust0"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ferris-says = "0.3.2"
+
+[dependencies.pyo3]
+version = "0.25.0"
+# this is necessary to automatically initialize the Python interpreter
+features = ["auto-initialize"]
+
+[[example]]
+name = "rust_to_python" # examples/boolean.rs
